@@ -1,0 +1,21 @@
+// Import Constants
+@import 'constants/baseline';
+
+// Import Functions
+@import 'functions/unit-utilities';
+
+// Import Modules
+@import 'modules/color';
+@import 'modules/fonts';
+@import 'modules/fluid';
+@import 'modules/button';
+
+
+html {
+    font-size: $basePercentage;
+}
+
+h1 {
+    // FONT
+    @include fluid(font-size, 2.4rem, 7.2rem);
+}
